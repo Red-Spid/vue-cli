@@ -1,0 +1,68 @@
+#cites {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1010;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  height: 100%;
+  width: 100%;
+}
+#cites .white {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 76.92307692%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: white;
+  z-index: 100;
+  text-align: center;
+}
+#cites .white h1 {
+  font-size: 16px;
+  line-height: 40px;
+}
+#cites .white .w {
+  width: 100%;
+}
+#cites .white div {
+  padding-left: 10px;
+}
+#cites .white div button {
+  line-height: 40px;
+}
+#cites .white .country {
+  border-bottom: solid 1px #ccc;
+}
+#cites .white .country div {
+  padding-right: 10px;
+}
+#cites .white .country div button {
+  font-size: 14px;
+  color: #333;
+  padding-right: 5px;
+}
+#cites .white .country div .active {
+  color: #f2270c;
+  border-bottom: 1px solid #f2270c;
+}
+#cites .white .choice {
+  border-bottom: solid 1px #ccc;
+  padding: 0 15px 0 10px;
+}
+#cites .white .choice button {
+  color: #333;
+  margin-right: 10px;
+}
+#cites .white .choice .active {
+  color: #f2270c;
+  border-bottom: 1px solid #f2270c;
+}
+#cites .white .provinces {
+  text-align: left;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 0;
+}

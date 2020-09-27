@@ -1,0 +1,245 @@
+.da {
+  background: #efefef;
+  padding-bottom: 100px;
+}
+.ja {
+  overflow: hidden;
+  background: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.quan {
+  margin-top: 12px;
+  min-height: 151px;
+  border-radius: 12px;
+  padding: 0 18px;
+}
+.el-row {
+  background: none;
+}
+.el-header {
+  padding: 0 5px;
+}
+.el-header .el-row {
+  width: 100%;
+  padding: 0 3% 0 1%;
+  background: none;
+  opacity: 1;
+}
+.el-header .el-row .el-col-24 a {
+  border-radius: 50%;
+  background: black;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: block;
+}
+.el-header .el-row .el-col-24 a span {
+  background: url("../../img/sigin/classh.png") no-repeat;
+  width: 20px;
+  float: left;
+  height: 10px;
+  margin-top: 5px;
+  background-size: 100%;
+}
+.el-header .el-row .el-col-24 a:last-child {
+  height: 10px;
+  padding: 15px 0;
+}
+.el-header .op1 {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: white;
+}
+.el-header .op1 .el-col-24 a {
+  background: none;
+}
+.el-header .op1 .el-col-24 a img {
+  width: 20px;
+  margin: 5px 5px 5px 0;
+  height: 20px;
+}
+.el-header .op1 .el-col-24 .el-col-6 {
+  margin: 5px 0;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+}
+.el-header .op1 .el-col-24 .el-col-6:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 3px;
+  left: 50%;
+  bottom: 3px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5503a), to(#fad1cb));
+  background-image: -webkit-linear-gradient(left, #f5503a, #fad1cb);
+  background-image: linear-gradient(90deg, #f5503a, #fad1cb);
+}
+.numTur {
+  position: absolute;
+  right: 0;
+  padding: 0 10px;
+  bottom: 20px;
+  color: white;
+  line-height: 20px;
+  border-radius: 10px 0 0 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.el-main .el-row .el-col p {
+  color: #f2270c;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.el-main .el-row .el-col s {
+  color: #b5b5b5;
+  line-height: 14px;
+  margin-top: 8px;
+}
+.el-main .el-row .el-col div {
+  margin-top: 6px;
+}
+.el-main .el-row .el-col div a {
+  float: left;
+  position: relative;
+  padding-top: 22px;
+  line-height: 1em;
+  height: 10px;
+  width: 40px;
+  font-size: 9px;
+  color: #262626;
+  text-align: center;
+}
+.el-main .el-row .el-col div a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background: url("../../img/sigin/pice.png") no-repeat;
+  background-size: 100%;
+  border: none;
+}
+.el-main .el-row .el-col div a:nth-child(2):after {
+  background: url("../../img/sigin/sc.png") no-repeat;
+  background-size: 100%;
+}
+.el-main .el-row .jdcs {
+  margin-bottom: 12px;
+  min-height: 18px;
+  line-height: 18px;
+  color: #333;
+}
+.el-main .el-row .jdcs img {
+  width: 12%;
+  margin-top: 2.5px;
+  margin-right: 2px;
+  height: 13px;
+}
+.el-main .el-row .tit {
+  font-size: 16px;
+  font-weight: bold;
+}
+.el-main .el-row .tit img {
+  width: 8%;
+  height: 15px;
+}
+#fot {
+  position: fixed;
+  bottom: 0;
+  height: 50px !important;
+  z-index: 100;
+  padding: 0;
+  width: 100%;
+  background: white;
+}
+#fot a {
+  width: 14%;
+  text-align: center;
+}
+#fot a span {
+  line-height: 19px;
+}
+#fot a p {
+  width: 20px;
+  height: 22px;
+  margin: 8px 0px 0 18px;
+  position: relative;
+}
+#fot a p span {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: inline-block;
+  background: #fff;
+  color: #e4393c;
+  font-size: 7px;
+  margin-left: -10px;
+  line-height: 9px;
+  border: 1px solid #e4393c;
+  border-radius: 10px;
+  padding: 1px 3px;
+  font-weight: 700;
+}
+#fot a p i {
+  position: absolute;
+  color: #e4393c;
+  z-index: 1000;
+  top: -12px;
+  opacity: 0;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+#fot a:nth-child(1) p {
+  background-size: auto 20px;
+}
+#fot a:nth-child(2) p {
+  background: url("../../img/sigin/dp.png") no-repeat;
+  background-size: auto 20px;
+}
+#fot a:nth-child(3) p {
+  background: url("../../img/sigin/gwc.png") no-repeat;
+  background-size: auto 20px;
+}
+#fot button {
+  width: 27.5%;
+  border-radius: 21px;
+  color: #fff;
+  background-image: -webkit-linear-gradient(315deg, #f2140c, #f2270c 70%, #f24d0c);
+  background-image: linear-gradient(135deg, #f2140c, #f2270c 70%, #f24d0c);
+  line-height: 14px;
+  margin: 6px 3px 6px 0;
+  border: none;
+}
+#fot button:last-child {
+  background-image: -webkit-linear-gradient(315deg, #ffba0d, #ffc30d 69%, #ffcf0d);
+  background-image: linear-gradient(135deg, #ffba0d, #ffc30d 69%, #ffcf0d);
+}
+.date {
+  position: fixed;
+  z-index: 10000;
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.date .d1 {
+  margin-top: 5%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: white;
+}
+.date .d1 .tit img {
+  width: 40px;
+  height: 40px;
+}

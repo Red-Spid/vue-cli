@@ -1,4 +1,7 @@
-import { good, api, all } from '../http'
+import {
+  // good, api,
+  all
+} from '../http'
 class Aggregate {
   time() {//当前时间
     let date = new Date();
@@ -22,10 +25,10 @@ class Aggregate {
     // date.Format('yyyy-MM-dd hh:mm:ss.S q')
     return date.Format('yyyy-MM-dd hh:mm:ss.S q')
   }
-  timeto() {//倒计时
+  timeto(setHours) {//倒计时
     var date = new Date(); //1. js获取当前时间
     var min = date.getHours(); //2. 获取当前分钟
-    date.setHours(min + 2); //3. 设置当前时间+10分钟：把当前分钟数+10后的值重新设置为date对象的分钟数
+    date.setHours(min + setHours); //3. 设置当前时间+10分钟：把当前分钟数+10后的值重新设置为date对象的分钟数
     /* 
     var y = date.getFullYear();
     var m = date.getMonth();
@@ -153,71 +156,69 @@ class Aggregate {
 
     // )
   }
-}
-function increment(state) {
-  this._vm.$bus.gate = Aggregate;
-  var totalData = {//所有的总数据
-    time: this._vm.$bus.gate.prototype.time(),
-    route: [],
-    img: 'http://106.12.85.17:8090/public/image/',
-    // http:'http://106.12.85.17:8090/vuedemo/',
+  increment(state) {
+    this._vm.$bus.gate = Aggregate;
+    var totalData = {//所有的总数据
+      time: this._vm.$bus.gate.prototype.time(),
+      route: [],
+      img: 'http://106.12.85.17:8090/public/image/',
+      // http:'http://106.12.85.17:8090/vuedemo/',
+    }
+    // 路由
+    totalData.route.push(
+      this._vm.$bus.gate.prototype.routeTo()
+    )
+    //本地缓存数据
+    var local = this._vm.$bus.gate.prototype.local();
+    if (local) {
+      totalData.win = local
+    }
+
+    if (Object.keys(totalData.win.user).length == 0) {//用户
+      totalData.user = false;
+    } else {
+      totalData.user = true;
+    }
+
+    // console.log(totalData)
+
+    state.totalData = totalData
+    this._vm.$bus.totalData = totalData
+
+    //region 地区
+    state.Routing = ''
+    state.zow = []
+    state.total = []
+    state.dataNum = []
+    // Basics()
+    // console.log(this._vm.$bus.totalData.win)
+    console.log(state)
+    // console.log(local)
   }
-  // 路由
-  totalData.route.push(
-    this._vm.$bus.gate.prototype.routeTo()
-  )
-  //本地缓存数据
-  var local = this._vm.$bus.gate.prototype.local();
-  if (local) {
-    totalData.win = local
+  total(a, b) {
+    all(a.totalData.win, b)
+    // console.log(
+    //   window.localStorage.getItem("query")
+    // )
   }
-
-  if (Object.keys(totalData.win.user).length == 0) {//用户
-    totalData.user = false;
-  } else {
-    totalData.user = true;
+  toUpdate() {//路由缓存
+    var rou = this._vm.$bus.totalData.route
+    if (rou.length == 9) {
+      rou.shift()
+    }
+    rou.push(
+      this._vm.$bus.gate.prototype.routeTo()
+    )
   }
-
-  // console.log(totalData)
-
-  state.totalData = totalData
-  this._vm.$bus.totalData = totalData
-
-  //region 地区
-  state.Routing = ''
-  state.zow = []
-  state.total = []
-  state.dataNum = []
-  // Basics()
-  // console.log(this._vm.$bus.totalData.win)
-  console.log(state)
-  // console.log(local)
+  add(state) {
+    state.count++
+  }
 }
 
-function total(a, b) {
-  all(a.totalData.win, b)
-  // console.log(
-  //   window.localStorage.getItem("query")
-  // )
-}
 
 // function th3(state) {
 // return ListOfCities(state.totalData.win.total)
 // return state.totalData.win.total
 // }
 
-function toUpdate() {//路由缓存
-  var rou = this._vm.$bus.totalData.route
-  if (rou.length == 9) {
-    rou.shift()
-  }
-  rou.push(
-    this._vm.$bus.gate.prototype.routeTo()
-  )
-}
-
-function add(state) {
-  state.count++
-}
-
-export default { increment, toUpdate, good, api, all, total, add }
+export default Aggregate.prototype

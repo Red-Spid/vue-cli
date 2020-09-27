@@ -1,0 +1,105 @@
+@w: 100%;
+@c: #e93b3d;
+.jing {
+  width: @w;
+  height: 120px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  img {
+    width: @w;
+  }
+}
+.grey {
+  position: fixed;
+  top: 0;
+  height: 120px;
+  z-index: 21;
+  background: black;
+  opacity: 0.3;
+  left: 0;
+  width: @w;
+}
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  width: 95%;
+  padding: 20px 10px 0;
+  .monopoly {
+    width: 55%;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      line-height: 20px;
+    }
+    span {
+      width: 10px;
+      height: 10px;
+      margin: 0 1px;
+      display: inline-block;
+      background: url(../../img/details/xing.png) no-repeat;
+      background-position: 10px 0;
+      background-size: 20px 20px;
+    }
+  }
+  .Collection {
+    width: 20%;
+    span {
+      text-align: center;
+      width: @w / 1;
+      background: @c;
+      color: white;
+      line-height: 32px;
+      border-radius: 20px;
+    }
+  }
+  .menu {
+    width: 20px;
+    margin-left: 10px;
+    height: 20px;
+    span {
+      display: block;
+      height: 20px;
+      margin-top: 5px;
+      background: url(../../img/sigin/bclass.png) no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+  .data {
+    width: @w;
+    margin-top: 20px;
+    & > button {
+      padding: 0 10px;
+      line-height: 24px;
+      background: #ccc;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    div {
+      width: 60%;
+      display: flex;
+      button {
+        flex: 1;
+        color: white;
+        line-height: 24px;
+      }
+      .active {
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}

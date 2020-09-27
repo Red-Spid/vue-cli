@@ -1,0 +1,102 @@
+@w: 100%;
+.padding {
+  padding: 0 15px;
+}
+.hea {
+  margin-bottom: 10px;
+}
+.w {
+  width: @w;
+}
+.wh {
+  background: white;
+}
+.tit {
+  width: 90%;
+  padding: 0 5%;
+  text-align: center;
+  button {
+    width: 22px;
+    height: 22px;
+    margin: 10px 0;
+    img {
+      width: @w;
+      height: @w;
+    }
+  }
+  .drop-down {
+    img {
+      height: 3px;
+      margin: 6px 0;
+    }
+  }
+  span {
+    line-height: 40px;
+    font-size: 16px;
+  }
+}
+.red {
+  color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#f2270c),
+    to(#ff4b2b)
+  );
+  text-align: center;
+  background-image: -webkit-linear-gradient(right, #f2270c, #ff4b2b);
+  background-image: linear-gradient(270deg, #f2270c, #ff4b2b);
+  box-shadow: 0 3px 6px 0 rgba(255, 65, 66, 0.2);
+  border-radius: 15px;
+}
+.useErr {
+  padding: 25px 15%;
+  width: 70%;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 0 0 10px 10px;
+  .sed {
+    width: 20%;
+  }
+}
+.address {
+  width: 90%;
+  padding: 0 5%;
+  margin-top: 1px;
+  .ress {
+    position: relative;
+    padding: 0 20px;
+    margin-top: 10px;
+    width: 70%;
+    line-height: 30px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -6px;
+      background-image: url(../../img/sigin/address.png);
+      background-position: -80px -104px;
+      background-size: 126px 118px;
+      width: 12px;
+      height: 12px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 8px;
+      background: #bfbfbf;
+      top: 50%;
+      right: 0;
+      margin-top: -0.25rem;
+    }
+  }
+  span {
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

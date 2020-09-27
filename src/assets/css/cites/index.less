@@ -1,0 +1,71 @@
+@w: 100%;
+@active: #f2270c;
+#cites {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1010;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s;
+  height: @w;
+  width: @w;
+  .white {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: @w / 1.3;
+    width: @w;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: white;
+    z-index: 100;
+    text-align: center;
+    h1 {
+      font-size: 16px;
+      line-height: 40px;
+    }
+    .w {
+      width: @w;
+    }
+    div {
+      padding-left: 10px;
+      button {
+        line-height: 40px;
+      }
+    }
+    .country {
+      border-bottom: solid 1px #ccc;
+      div {
+        padding-right: 10px;
+        button {
+          font-size: 14px;
+          color: #333;
+          padding-right: 5px;
+        }
+        .active {
+          color: @active;
+          border-bottom: 1px solid @active;
+        }
+      }
+    }
+    .choice {
+      border-bottom: solid 1px #ccc;
+      padding: 0 15px 0 10px;
+
+      button {
+        color: #333;
+        margin-right: 10px;
+      }
+      .active {
+        color: @active;
+        border-bottom: 1px solid @active;
+      }
+    }
+    .provinces {
+      text-align: left;
+      line-height: 40px;
+      font-size: 14px;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-const state = {
+export default {
     count: 0,//全局计数
     item_: 0,//全局计数
     num: 1,//从1开始
@@ -24,4 +24,3 @@ const state = {
     timeTo: [],//当前推荐的分类
     thisMy: [],//个人位置信息
 }
-export default state

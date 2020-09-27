@@ -1,0 +1,316 @@
+@w: 100%;
+.w {
+  width: @w;
+}
+.jian() {
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -4px;
+    background-image: url(//wq.360buyimg.com/wxsq_trade/cart/main/images/sprite.img_default_437_9dfdf506.png);
+    background-position: -117px -27px;
+    background-size: 126px 118px;
+    width: 8px;
+    height: 8px;
+  }
+}
+.horn {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.commodity {
+  background: white;
+  padding: 10px 0;
+  margin-bottom: 100px;
+  .shop {
+    & > div {
+      padding: 0 10px;
+      width: 95%;
+    }
+    .head {
+      line-height: 20px;
+      i {
+        background-image: url(../../img/sigin/address.png);
+        background-size: 126px 118px;
+        background-position: 0 -31px;
+        width: 31px;
+        height: 31px;
+        margin-right: 5px;
+      }
+      .active {
+        background-position: -31px 0;
+      }
+      .shop {
+        background-position: -42px -104px;
+        width: 14px;
+        height: 14px;
+        margin-top: 10px;
+      }
+      .name {
+        font-weight: bold;
+        line-height: 30px;
+        width: 30%;
+        position: relative;
+        i {
+          .jian();
+        }
+      }
+      .notice {
+        position: relative;
+        padding-left: 15px;
+        &:after {
+          content: "";
+          position: absolute;
+          background: url(../../img/sigin/address.png) no-repeat;
+          background-position: -115px -74px;
+          background-size: 126px 118px;
+          top: 60%;
+          left: 2px;
+          margin-top: -7px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    .data {
+      margin: 10px 0;
+      .activity {
+        padding-right: 10%;
+        width: 80%;
+        margin: 0 auto;
+        span {
+          &:first-child {
+            display: inline-block;
+            background: #f2270c;
+            color: #fff;
+            font-size: 10px;
+            padding: 0 2px;
+            height: 13px;
+            line-height: 13px;
+            margin-right: 3px;
+            vertical-align: top;
+          }
+          &:nth-child(2) {
+            font-weight: bold;
+          }
+          &:last-child {
+            width: 15%;
+            position: relative;
+            .jian();
+          }
+        }
+      }
+    }
+    .common {
+      margin-bottom: 10px;
+      .information {
+        button {
+          background-image: url(../../img/sigin/address.png);
+          background-size: 126px 118px;
+          background-position: 0 -31px;
+          width: 31px;
+          height: 31px;
+          margin-right: 5px;
+        }
+        .active {
+          background-position: -31px 0;
+        }
+        .img {
+          width: 28%;
+          overflow: hidden;
+          box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+          img {
+            width: @w;
+            height: @w;
+          }
+        }
+        div {
+          &:nth-child(3) {
+            width: 57%;
+            padding-left: 3%;
+
+            .name {
+              margin-bottom: 10px;
+              font-size: 14px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+            .Specifications {
+              width: @w;
+              margin-bottom: 10px;
+              height: 14px;
+              span {
+                background: #f2f2f2;
+                position: relative;
+
+                &:last-child {
+                  padding-right: 10px;
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0.25rem;
+                    margin-top: -3px;
+                    background-image: url(//wq.360buyimg.com/wxsq_trade/cart/main/images/sprite.img_default_437_9dfdf506.png);
+                    background-position: -117px -43px;
+                    background-size: 126px 118px;
+                    width: 6px;
+                    height: 6px;
+                  }
+                }
+              }
+            }
+          }
+          .pice_list {
+            width: @w;
+            .pice {
+              color: #f2270c;
+              font-size: 16px;
+              line-height: 16px;
+              font-weight: bold;
+              span {
+                color: #f2270c;
+              }
+            }
+            .da {
+              width: 30%;
+              div,
+              input {
+                float: left;
+                line-height: 20px;
+              }
+              input {
+                width: 35%;
+                text-align: center;
+              }
+              div {
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                background: url(../../img/sigin/jia.png) no-repeat 50%;
+                background-size: 20px 20px;
+                &:first-child {
+                  background: url(../../img/sigin/jian.png) no-repeat 50%;
+                }
+              }
+              .active {
+                &:first-child {
+                  background: url(../../img/sigin/jianactive.png) no-repeat 50%;
+                }
+              }
+            }
+          }
+        }
+        .delete {
+          float: right;
+          line-height: 20px;
+          width: 20%;
+          text-align: right;
+          margin: 5px 10px 5px 0;
+        }
+      }
+    }
+  }
+}
+.j {
+  position: fixed;
+  z-index: 10001;
+  background: black;
+  opacity: 0.2;
+  width: @w;
+  height: @w;
+  top: 0;
+  left: 0;
+}
+.del {
+  position: fixed;
+  z-index: 10002;
+  background: white;
+  width: 70%;
+  height: 30%;
+  top: 35%;
+  border-radius: 15px;
+  left: 15%;
+  div {
+    &:first-child {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      span {
+        background: url(../../img/sigin/errTure.png) no-repeat;
+        background-size: 164px 144px;
+        background-repeat: no-repeat;
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 20px auto 10px;
+        background-position: -5px -5px;
+      }
+    }
+    &:last-child {
+      width: 90%;
+      position: absolute;
+      bottom: 20px;
+      left: 10%;
+      button {
+        border-radius: 15px;
+        line-height: 30px;
+        width: 45%;
+        margin-right: 5%;
+        &:first-child {
+          border: solid 1px #ccc;
+        }
+        &:last-child {
+          background: #f2270c;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.cen() {
+  position: fixed;
+  left: 35%;
+  top: 40%;
+  width: 30%;
+  height: 20%;
+}
+.del11 {
+  .cen();
+  z-index: 1001;
+  background: black;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+.DeletionSucceeded {
+  .cen();
+  z-index: 1002;
+  text-align: center;
+  span {
+    background: url(../../img/sigin/errTure.png) no-repeat;
+    background-size: 164px 144px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 52px;
+    height: 50px;
+    margin: 20px auto 10px;
+    background-position: -56px -5px;
+  }
+  p {
+    margin-top: 10px;
+    color: white;
+    line-height: 24px;
+  }
+}
+// .tran {
+//   opacity: 0;
+//   transition: all 1s;
+//   -webkit-transition: all 1s;
+//   -moz-transition: all 1s;
+// }

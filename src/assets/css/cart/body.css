@@ -1,0 +1,302 @@
+.w {
+  width: 100%;
+}
+.horn {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.commodity {
+  background: white;
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+.commodity .shop > div {
+  padding: 0 10px;
+  width: 95%;
+}
+.commodity .shop .head {
+  line-height: 20px;
+}
+.commodity .shop .head i {
+  background-image: url(../../img/sigin/address.png);
+  background-size: 126px 118px;
+  background-position: 0 -31px;
+  width: 31px;
+  height: 31px;
+  margin-right: 5px;
+}
+.commodity .shop .head .active {
+  background-position: -31px 0;
+}
+.commodity .shop .head .shop {
+  background-position: -42px -104px;
+  width: 14px;
+  height: 14px;
+  margin-top: 10px;
+}
+.commodity .shop .head .name {
+  font-weight: bold;
+  line-height: 30px;
+  width: 30%;
+  position: relative;
+}
+.commodity .shop .head .name i:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -4px;
+  background-image: url(//wq.360buyimg.com/wxsq_trade/cart/main/images/sprite.img_default_437_9dfdf506.png);
+  background-position: -117px -27px;
+  background-size: 126px 118px;
+  width: 8px;
+  height: 8px;
+}
+.commodity .shop .head .notice {
+  position: relative;
+  padding-left: 15px;
+}
+.commodity .shop .head .notice:after {
+  content: "";
+  position: absolute;
+  background: url(../../img/sigin/address.png) no-repeat;
+  background-position: -115px -74px;
+  background-size: 126px 118px;
+  top: 60%;
+  left: 2px;
+  margin-top: -7px;
+  width: 10px;
+  height: 10px;
+}
+.commodity .shop .data {
+  margin: 10px 0;
+}
+.commodity .shop .data .activity {
+  padding-right: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+.commodity .shop .data .activity span:first-child {
+  display: inline-block;
+  background: #f2270c;
+  color: #fff;
+  font-size: 10px;
+  padding: 0 2px;
+  height: 13px;
+  line-height: 13px;
+  margin-right: 3px;
+  vertical-align: top;
+}
+.commodity .shop .data .activity span:nth-child(2) {
+  font-weight: bold;
+}
+.commodity .shop .data .activity span:last-child {
+  width: 15%;
+  position: relative;
+}
+.commodity .shop .data .activity span:last-child:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -4px;
+  background-image: url(//wq.360buyimg.com/wxsq_trade/cart/main/images/sprite.img_default_437_9dfdf506.png);
+  background-position: -117px -27px;
+  background-size: 126px 118px;
+  width: 8px;
+  height: 8px;
+}
+.commodity .shop .common {
+  margin-bottom: 10px;
+}
+.commodity .shop .common .information button {
+  background-image: url(../../img/sigin/address.png);
+  background-size: 126px 118px;
+  background-position: 0 -31px;
+  width: 31px;
+  height: 31px;
+  margin-right: 5px;
+}
+.commodity .shop .common .information .active {
+  background-position: -31px 0;
+}
+.commodity .shop .common .information .img {
+  width: 28%;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.commodity .shop .common .information .img img {
+  width: 100%;
+  height: 100%;
+}
+.commodity .shop .common .information div:nth-child(3) {
+  width: 57%;
+  padding-left: 3%;
+}
+.commodity .shop .common .information div:nth-child(3) .name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.commodity .shop .common .information div:nth-child(3) .Specifications {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 14px;
+}
+.commodity .shop .common .information div:nth-child(3) .Specifications span {
+  background: #f2f2f2;
+  position: relative;
+}
+.commodity .shop .common .information div:nth-child(3) .Specifications span:last-child {
+  padding-right: 10px;
+}
+.commodity .shop .common .information div:nth-child(3) .Specifications span:last-child:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.25rem;
+  margin-top: -3px;
+  background-image: url(//wq.360buyimg.com/wxsq_trade/cart/main/images/sprite.img_default_437_9dfdf506.png);
+  background-position: -117px -43px;
+  background-size: 126px 118px;
+  width: 6px;
+  height: 6px;
+}
+.commodity .shop .common .information div .pice_list {
+  width: 100%;
+}
+.commodity .shop .common .information div .pice_list .pice {
+  color: #f2270c;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.commodity .shop .common .information div .pice_list .pice span {
+  color: #f2270c;
+}
+.commodity .shop .common .information div .pice_list .da {
+  width: 30%;
+}
+.commodity .shop .common .information div .pice_list .da div,
+.commodity .shop .common .information div .pice_list .da input {
+  float: left;
+  line-height: 20px;
+}
+.commodity .shop .common .information div .pice_list .da input {
+  width: 35%;
+  text-align: center;
+}
+.commodity .shop .common .information div .pice_list .da div {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: url(../../img/sigin/jia.png) no-repeat 50%;
+  background-size: 20px 20px;
+}
+.commodity .shop .common .information div .pice_list .da div:first-child {
+  background: url(../../img/sigin/jian.png) no-repeat 50%;
+}
+.commodity .shop .common .information div .pice_list .da .active:first-child {
+  background: url(../../img/sigin/jianactive.png) no-repeat 50%;
+}
+.commodity .shop .common .information .delete {
+  float: right;
+  line-height: 20px;
+  width: 20%;
+  text-align: right;
+  margin: 5px 10px 5px 0;
+}
+.j {
+  position: fixed;
+  z-index: 10001;
+  background: black;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.del {
+  position: fixed;
+  z-index: 10002;
+  background: white;
+  width: 70%;
+  height: 30%;
+  top: 35%;
+  border-radius: 15px;
+  left: 15%;
+}
+.del div:first-child {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.del div:first-child span {
+  background: url(../../img/sigin/errTure.png) no-repeat;
+  background-size: 164px 144px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto 10px;
+  background-position: -5px -5px;
+}
+.del div:last-child {
+  width: 90%;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+}
+.del div:last-child button {
+  border-radius: 15px;
+  line-height: 30px;
+  width: 45%;
+  margin-right: 5%;
+}
+.del div:last-child button:first-child {
+  border: solid 1px #ccc;
+}
+.del div:last-child button:last-child {
+  background: #f2270c;
+  color: white;
+}
+.del11 {
+  position: fixed;
+  left: 35%;
+  top: 40%;
+  width: 30%;
+  height: 20%;
+  z-index: 1001;
+  background: black;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+.DeletionSucceeded {
+  position: fixed;
+  left: 35%;
+  top: 40%;
+  width: 30%;
+  height: 20%;
+  z-index: 1002;
+  text-align: center;
+}
+.DeletionSucceeded span {
+  background: url(../../img/sigin/errTure.png) no-repeat;
+  background-size: 164px 144px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 52px;
+  height: 50px;
+  margin: 20px auto 10px;
+  background-position: -56px -5px;
+}
+.DeletionSucceeded p {
+  margin-top: 10px;
+  color: white;
+  line-height: 24px;
+}

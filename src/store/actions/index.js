@@ -5,6 +5,9 @@ const actions = {
     },
     actionsJian({ commit }, n = 0) {
         return commit('jian', n)
+    },
+    actionstimeto(context, setHours) {
+        return context.commit('timeto', setHours)
     }
 }
 // add(context) {
