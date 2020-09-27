@@ -6,6 +6,9 @@
 </template>
 
 <script>
+import {
+    SOME_MUTATION
+} from "@/store/mutations/mutation-types";
 export default {
     name: "App",
     created() {
@@ -14,10 +17,11 @@ export default {
     methods: {
         Defaultdata() {
             console.log(this.$store);
-            console.log(this.$store.state);
+            // console.log(this.$store.state);
             console.log(this.$store.state.miss);
-            this.$store.dispatch("actionstimeto", 2);
-            console.log();
+            // this.$store.dispatch("actionstimeto", 2);
+            //   console.log();
+            this.$store.commit(SOME_MUTATION);
         },
     },
 };

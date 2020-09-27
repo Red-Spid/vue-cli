@@ -2,7 +2,17 @@ import {
   // good, api,
   all
 } from '../http'
-class Aggregate {
+import { SOME_MUTATION } from './mutation-types'
+
+
+// function th3(state) {
+// return ListOfCities(state.totalData.win.total)
+// return state.totalData.win.total
+// }
+var Aggregate = {
+  [SOME_MUTATION]() {
+    console.log('链接成功')
+  },
   time() {//当前时间
     let date = new Date();
     Date.prototype.Format = function (fmt) {
@@ -24,7 +34,7 @@ class Aggregate {
     };
     // date.Format('yyyy-MM-dd hh:mm:ss.S q')
     return date.Format('yyyy-MM-dd hh:mm:ss.S q')
-  }
+  },
   timeto(setHours) {//倒计时
     var date = new Date(); //1. js获取当前时间
     var min = date.getHours(); //2. 获取当前分钟
@@ -56,10 +66,10 @@ class Aggregate {
       [(60 - s) < 10 ? "0" + (60 - s) : (60 - s)];
     //[(60 - f) < 10 ? "0" + (60 - f) : (60 - f)&& f == 0 ? f = 59 : (60 - f)]
     return formatdate
-  }
+  },
   routeTo() {
     return location.pathname
-  }
+  },
   local() {
     var win = window.localStorage.getItem('query')
     if (win == null) {
@@ -82,13 +92,13 @@ class Aggregate {
       window.localStorage.setItem('query', JSON.stringify(dow))
     }
     return JSON.parse(window.localStorage.getItem('query'))
-  }
+  },
   httpData(a) {
     return a
-  }
+  },
   liveData() {
 
-  }
+  },
   pathTo(global, url_, data_ = {}, setInterval_ = 800) {
     //路由跳转 延迟 数据传递
     // console.log(global)
@@ -98,37 +108,37 @@ class Aggregate {
         query: data_
       });
     }, setInterval_)
-  }
+  },
   _storage(global, url_, data_ = {}) {
     // global.oneTo.globalData < global.oneTo.errDate
     console.log(global, url_, data_)
-  }
+  },
   ifMamp(val, if_) {//循环比较返回使用值
     val.forEach((item, ind) => {
       if (if_ == item) {
         return ind
       }
     })
-  }
+  },
   ifObj(val, if_) {//对象循环判断
     Object.keys(val).forEach((item, ind) => {
       if (if_ == item) {
         return ind
       }
     })
-  }
+  },
   parse_(val) {//去除字符串
     return JSON.parse(val)
-  }
+  },
   stringify_(val) {//变成字符串
     return JSON.stringify(val)
-  }
+  },
   appenchild_(val, dom_ = '-') {//添加插入
     return val.join(dom_)
-  }
+  },
   winData() {//获取本地缓存
     return window.localStorage.getItem('query')
-  }
+  },
   main_Data(global) {//默认启动判断用户和临时用户是否有数据
     console.log(global)
     var win = Aggregate.prototype.parse_(Aggregate.prototype.winData());
@@ -155,7 +165,7 @@ class Aggregate {
     // await global.$http.get(
 
     // )
-  }
+  },
   increment(state) {
     this._vm.$bus.gate = Aggregate;
     var totalData = {//所有的总数据
@@ -194,13 +204,13 @@ class Aggregate {
     // console.log(this._vm.$bus.totalData.win)
     console.log(state)
     // console.log(local)
-  }
+  },
   total(a, b) {
     all(a.totalData.win, b)
     // console.log(
     //   window.localStorage.getItem("query")
     // )
-  }
+  },
   toUpdate() {//路由缓存
     var rou = this._vm.$bus.totalData.route
     if (rou.length == 9) {
@@ -209,16 +219,11 @@ class Aggregate {
     rou.push(
       this._vm.$bus.gate.prototype.routeTo()
     )
-  }
+  },
   add(state) {
     state.count++
-  }
+  },
 }
-
-
-// function th3(state) {
-// return ListOfCities(state.totalData.win.total)
-// return state.totalData.win.total
-// }
-
-export default Aggregate.prototype
+// var functionAll = timeo.prototype
+// console.log(functionAll)
+export default Aggregate
